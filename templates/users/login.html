@@ -1,0 +1,14 @@
+{% comment %} {% extends 'main.html' %} {% endcomment %}
+
+{% block content %}
+    <center>
+        <form method="post" action="" enctype="multipa/form-data"> {% csrf_token %}
+            <input type="text" name="username" placeholder="Entrer votre nom">
+            <br><br>
+            <input type="password" name="password" placeholder="Entrer votre password">
+            <br><br>
+
+            <button type="submit">Save</button>
+        </form>
+    </center>
+{% endblock %}

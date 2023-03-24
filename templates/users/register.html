@@ -1,0 +1,10 @@
+{% comment %} {% extends 'main.html' %} {% endcomment %}
+
+{% block content %}
+    <center>
+        <form method="post" action="{% url 'register' %}" enctype="multipa/form-data"> {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" name="" value="Save">
+        </form>
+    </center>
+{% endblock %}
